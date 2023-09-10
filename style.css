@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  background: #f9f9f9;
+  min-height: 100vh;
+  /* overflow-x: hidden; */
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 100;
+}
+
+.Logo {
+  font-size: 2rem;
+  color: #359381;
+  pointer-events: none;
+  margin-right: 27rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #359381;
+  padding: 6px 15px;
+  border-radius: 15px;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active {
+  background: #359381;
+  color: #fff;
+}
+
+.parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#text {
+  position: absolute;
+  font-size: 5rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.Sec {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #003329;
+  padding: 100px;
+  align-items: center;
+  text-align: center;
+}
+
+.Sec h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Sec p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.collage {
+  display: flex;
+  flex-direction: row; /* Horizontal layout for big and small images */
+  align-items: stretch; /* Stretch elements to fill the container vertically */
+  margin-top: 20px;
+  max-width: 80%;
+}
+
+.big-image {
+  flex: 2; /* The big image will take 2/3 of the available width */
+  margin: 6px 0 6px 6px;
+}
+
+.small-images {
+  flex: 1; /* Each small image will take 1/3 of the available width */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Stretch small images vertically */
+}
+
+.smallimg {
+  flex-grow: 1; /* Allow small images to grow and fill the available space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6px;
+}
+
+.small-images img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.big-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+//cards
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.main-content {
+  width: 100%;
+}
+
+.row {
+  width: 85%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+.row .col {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.CardContainer {
+  width: 30rem;
+  height: 37rem;
+  display: flex;
+  margin: 1rem 0rem;
+  flex-direction: column;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.CardContainer h2,
+.CardContainer p {
+  margin: 3px 5px 0 20px;
+}
+.CardContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.CardInfo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  padding: 10px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.CardContainer:hover .CardInfo {
+  transform: translateY(0);
+}
