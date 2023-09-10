@@ -95,6 +95,7 @@ header {
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
+
 .collage {
   display: flex;
   flex-direction: row; /* Horizontal layout for big and small images */
@@ -195,4 +196,60 @@ header {
 
 .CardContainer:hover .CardInfo {
   transform: translateY(0);
+}
+
+.email-form {
+  background: #f9f9f9;
+  padding: 30px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 82.5%;
+}
+
+.email-form h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #359381;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+button[type="submit"] {
+  background: #359381;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+button[type="submit"]:hover {
+  background: #26715a;
 }
