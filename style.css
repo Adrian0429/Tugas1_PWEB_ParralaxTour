@@ -218,6 +218,18 @@ header {
   margin-bottom: 15px;
 }
 
+.form-radio {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-radio label {
+  margin-right: 20px;
+}
+.form-radio input {
+  margin-right: 5px;
+}
+
 label {
   display: block;
   font-weight: 600;
