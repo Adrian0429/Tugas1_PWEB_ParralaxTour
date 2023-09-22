@@ -3,131 +3,158 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parralax Tour</title>
+    <title>Tugas Pweb Bootstrap-5</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h2 class="Logo">JalanKuy</h2>
-      <nav class="navigation">
-        <a href="/login.html">LOGIN</a>
-        <a href="#Sec">About</a>
-        <a href="#">Destination</a>
-        <a href="#">Contact Us</a>
+    <div
+      class="bg-primary d-flex justify-content-center container-fluid custom-container-fluid"
+      style="height: 2.5rem"
+    >
+      <div class="container-lg row custom-container">
+        <div class="w-75 d-flex align-items-center">
+          <p class="m-0 text-white">
+            our free WordPress themes are downloaded over 5 Million Times
+          </p>
+        </div>
+        <div class="w-25 d-flex align-items-center justify-content-end">
+          logo logo logo logo logo
+        </div>
+      </div>
+    </div>
+
+    <nav
+      class="container-fluid custom-container-fluid d-flex justify-content-center bg-body-tertiary"
+      style="height: 6rem"
+    >
+      <nav class="navbar navbar-expand-lg container-md">
+        <a class="mx-3 navbar-brand col-2 fs-1" href="#">ColorLib.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse bg-body-tertiary col-8 justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav d-flex">
+            <a class="nav-link active px-4 mx-" aria-current="page" href="#"
+              >Home</a
+            >
+            <a class="nav-link px-4 mx-" href="#">Support</a>
+            <a class="nav-link px-4 mx-" href="#">Free Themes</a>
+            <a class="nav-link px-4 mx-" href="#">Premium Themes</a>
+            <a class="nav-link px-4 mx-" href="#">Website Themes</a>
+            <a class="nav-link px-4 mx-" href="#">Blog</a>
+            <a class="nav-link px-4 mx-" href="#">Account</a>
+          </div>
+          <div class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-search mx-4"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </div>
+        </div>
       </nav>
-    </header>
+    </nav>
 
-    <section class="parallax">
-      <img src="./assets/parallax/hill1.png" id="hill1" />
-      <img src="./assets/parallax/hill2.png" id="hill2" />
-      <img src="./assets/parallax/hill3.png" id="hill3" />
-      <img src="./assets/parallax/hill4.png" id="hill4" />
-      <img src="./assets/parallax/hill5.png" id="hill5" />
-      <img src="./assets/parallax/tree.png" id="tree" />
-      <h2 id="text">Take A Peek Inside!</h2>
-      <img src="./assets/parallax/leaf.png" id="leaf" />
-      <img src="./assets/parallax/plant.png" id="plant" />
-    </section>
-    
-    <section class="Sec">
-      <h2>Take a Break and Relax</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque rerum
-        quis unde repellat aliquid.
-        <br />Vero soluta eaque ducimus blanditiis enim ea voluptas eum debitis
-        nulla et, aut praesentium. Blanditiis, nesciunt!
-      </p>
-        <div class="collage">
-         <div class="big-image">
-              <img src="./assets/big.jpg" alt="Big Image" />
-            </div>
-            <div class="small-images">
-                <div class="smallimg"><img src="./assets/travel1.jpg" alt="Small Image 1" /></div>
-                <div class="smallimg"><img src="./assets/travel1.jpg" alt="Small Image 2" /></div>
-            </div>
-        </div>
-    </section>
-
-    <div class="main-content">
+    <div class="container-fluid custom-container-fluid">
       <div class="row">
-        <div class="col">
-          <div class="CardContainer">
-            <img src="./assets/travel1.jpg" alt="" class="Cardimg" />
-            <div class="CardInfo">
-                <h2>Title 1</h3>
-                <p>A Short Description</p>
-            </div>
-          </div>
-
-          <div class="CardContainer">
-            <img src="./assets/travel2.jpg" alt="" class="Cardimg" />
-                        <div class="CardInfo">
-                <h2>Title 2</h3>
-                <p>A Short Description</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="CardContainer">
-            <img src="./assets/travel3.jpg" alt="" class="Cardimg" />
-                        <div class="CardInfo">
-                <h2>Title 3</h3>
-                <p>A Short Description</p>
-            </div>
-          </div>
-          <div class="CardContainer">
-            <img src="./assets/travel4.jpg" alt="" class="Cardimg" />
-                        <div class="CardInfo">
-                <h2>Title 4</h3>
-                <p>A Short Description</p>
+        <div class="col-12">
+          <div class="d-flex justify-content-center bg-body-secondary" style="">
+            <div class="container-md text-justify p-3">
+              <h2>Bootstrap 5</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                tempora soluta ipsa officia, ducimus pariatur dolore reiciendis,
+                necessitatibus sapiente repellat illo! Facilis voluptates quo
+                labore aperiam voluptatem enim iure dolore nemo ad fugit, totam,
+                exercitationem doloribus, quaerat porro asperiores! Sint, omnis
+                dicta. Error ut repellat, id placeat quae animi. Totam velit
+                accusantium unde voluptates cupiditate dignissimos quod quasi
+                tempore ad ea beatae veritatis amet, at obcaecati, perspiciatis
+                voluptas dolore inventore quos maiores maxime reprehenderit
+                magnam nesciunt vero corporis? Iure distinctio animi repellendus
+                quibusdam ducimus error non accusamus sint. Aspernatur nostrum
+                cum itaque eius nam excepturi exercitationem nemo consectetur
+                ratione quo vitae non beatae porro magni tempora est quia sint
+                cupiditate, numquam error deserunt iste totam deleniti illum.
+                Magni, a alias.
+              </p>
             </div>
           </div>
         </div>
 
-        <div class="col">
-          <div class="CardContainer">
-            <img src="./assets/travel5.jpg" alt="" class="Cardimg" />
-                        <div class="CardInfo">
-                <h2>Title 5</h3>
-                <p>A Short Description</p>
+        <div class="col-12 mt-5" style="border: 2px solid">
+          <div class="container-md">
+            <div class="row my-4">
+              <div class="col-4 tengahin">
+                <img src="./assets/2.png" alt="" />
+              </div>
+              <div class="col-4 tengahin">
+                <img src="./assets/1.png" alt="" />
+              </div>
+              <div class="col-4 tengahin">
+                <img src="./assets/2.png" alt="" />
+              </div>
             </div>
-          </div>
-          <div class="CardContainer">
-            <img src="./assets/travel6.jpg" alt="" class="Cardimg" />
-                        <div class="CardInfo">
-                <h2>Title 6</h3>
-                <p>A Short Description</p>
+            <div class="row my-4">
+              <div class="col-4 tengahin">
+                <img src="./assets/5.png" alt="" />
+              </div>
+              <div class="col-4 tengahin">
+                <img src="./assets/5.png" alt="" />
+              </div>
+              <div class="col-4 tengahin">
+                <img src="./assets/5.png" alt="" />
+              </div>
+            </div>
+
+            <div class="row my-4">
+              <div class="col-4 tengahin">
+                <img src="./assets/1.png" alt="" />
+              </div>
+              <div class="col-4 tengahin">
+                <img src="./assets/2.png" alt="" />
+              </div>
+              <div class="col-4 tengahin">
+                <img src="./assets/1.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
-    <div class="email-form">
-  <h2>Contact Us</h2>
-  <form action="mailto:royankaruna@gmail.com" method="post" enctype="text/plain">
-    <div class="form-group">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-    <div class="form-radio">
-    <input type="radio" id="html" name="fav_language" value="HTML">
-    <label for="html">HTML</label><br>
-    <input type="radio" id="css" name="fav_language" value="CSS">
-    <label for="css">CSS</label><br>
-    </div>
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-    </div>
-    <button type="submit">Send</button>
-  </form>
-</div>
-    <script src="script.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
