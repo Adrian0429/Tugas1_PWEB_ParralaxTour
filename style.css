@@ -7,11 +7,7 @@ p {
   margin: 0;
   padding: 0;
 }
-.custom-container-fluid {
-  margin: 0;
-}
 
-.custom-container {
-  padding-left: 0;
-  padding-right: 0;
+body {
+  font-family: "Poppins", sans-serif;
 }
