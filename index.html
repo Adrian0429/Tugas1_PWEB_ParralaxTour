@@ -1,133 +1,46 @@
 <!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parralax Tour</title>
+    <title>Calculator in HTML CSS & JavaScript</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h2 class="Logo">JalanKuy</h2>
-      <nav class="navigation">
-        <a href="#">Home</a>
-        <a href="#Sec">About</a>
-        <a href="#">Destination</a>
-        <a href="#">Contact Us</a>
-      </nav>
-    </header>
+    <div class="container">
+      <input type="text" class="displayprev" />
+      <input type="text" style="font-weight: 500" class="display" />
 
-    <section class="parallax">
-      <img src="./assets/parallax/hill1.png" id="hill1" />
-      <img src="./assets/parallax/hill2.png" id="hill2" />
-      <img src="./assets/parallax/hill3.png" id="hill3" />
-      <img src="./assets/parallax/hill4.png" id="hill4" />
-      <img src="./assets/parallax/hill5.png" id="hill5" />
-      <img src="./assets/parallax/tree.png" id="tree" />
-      <h2 id="text">Take A Peek Inside!</h2>
-      <img src="./assets/parallax/leaf.png" id="leaf" />
-      <img src="./assets/parallax/plant.png" id="plant" />
-    </section>
-    
-    <section class="Sec">
-      <h2>Take a Break and Relax</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque rerum
-        quis unde repellat aliquid.
-        <br />Vero soluta eaque ducimus blanditiis enim ea voluptas eum debitis
-        nulla et, aut praesentium. Blanditiis, nesciunt!
-      </p>
-        <div class="collage">
-         <div class="big-image">
-              <img src="./assets/big.jpg" alt="Big Image" />
-            </div>
-            <div class="small-images">
-                <div class="smallimg"><img src="./assets/travel1.jpg" alt="Small Image 1" /></div>
-                <div class="smallimg"><img src="./assets/travel1.jpg" alt="Small Image 2" /></div>
-            </div>
-        </div>
-    </section>
+      <div class="buttons">
+        <button class="operator" data-value="AC">AC</button>
+        <button class="operator" data-value="DEL">DEL</button>
+        <button class="operator" data-value="%">%</button>
+        <button class="operator" data-value="/">/</button>
 
-    <div class="main-content">
-      <div class="row">
-        <div class="col">
-          <div class="CardContainer">
-            <img src="./assets/travel1.jpg" alt="" class="Cardimg" />
-            <div class="CardInfo">
-                <h2>Title 1</h3>
-                <p>A Short Description</p>
-            </div>
-          </div>
+        <button data-value="7" style="font-weight: bold">7</button>
+        <button data-value="8" style="font-weight: bold">8</button>
+        <button data-value="9" style="font-weight: bold">9</button>
+        <button class="operator" data-value="*">*</button>
 
-          <div class="CardContainer">
-            <img src="./assets/travel2.jpg" alt="" class="Cardimg" />
-                        <div class="CardInfo">
-                <h2>Title 2</h3>
-                <p>A Short Description</p>
-            </div>
-          </div>
-        </div>
+        <button data-value="4" style="font-weight: bold">4</button>
+        <button data-value="5" style="font-weight: bold">5</button>
+        <button data-value="6" style="font-weight: bold">6</button>
+        <button class="operator" data-value="-">-</button>
 
-        <div class="col">
-          <div class="CardContainer">
-            <img src="./assets/travel3.jpg" alt="" class="Cardimg" />
-                        <div class="CardInfo">
-                <h2>Title 3</h3>
-                <p>A Short Description</p>
-            </div>
-          </div>
-          <div class="CardContainer">
-            <img src="./assets/travel4.jpg" alt="" class="Cardimg" />
-                        <div class="CardInfo">
-                <h2>Title 4</h3>
-                <p>A Short Description</p>
-            </div>
-          </div>
-        </div>
+        <button data-value="1" style="font-weight: bold">1</button>
+        <button data-value="2" style="font-weight: bold">2</button>
+        <button data-value="3" style="font-weight: bold">3</button>
+        <button class="operator" data-value="+">+</button>
 
-        <div class="col">
-          <div class="CardContainer">
-            <img src="./assets/travel5.jpg" alt="" class="Cardimg" />
-                        <div class="CardInfo">
-                <h2>Title 5</h3>
-                <p>A Short Description</p>
-            </div>
-          </div>
-          <div class="CardContainer">
-            <img src="./assets/travel6.jpg" alt="" class="Cardimg" />
-                        <div class="CardInfo">
-                <h2>Title 6</h3>
-                <p>A Short Description</p>
-            </div>
-          </div>
-        </div>
+        <button data-value="0" style="font-weight: bold">0</button>
+        <button data-value="00" style="font-weight: bold">00</button>
+        <button data-value="." style="font-weight: bold">.</button>
+        <button class="operator" data-value="=">=</button>
       </div>
     </div>
-    
-    <div class="email-form">
-  <h2>Contact Us</h2>
-  <form action="mailto:royankaruna@gmail.com" method="post" enctype="text/plain">
-    <div class="form-group">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-    <div class="form-radio">
-    <input type="radio" id="html" name="fav_language" value="HTML">
-    <label for="html">HTML</label><br>
-    <input type="radio" id="css" name="fav_language" value="CSS">
-    <label for="css">CSS</label><br>
-    </div>
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-    </div>
-    <button type="submit">Send</button>
-  </form>
-</div>
+
     <script src="script.js"></script>
   </body>
 </html>

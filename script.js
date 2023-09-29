@@ -1,16 +1,32 @@
-let text = document.getElementById('text')
-let leaf = document.getElementById('leaf')
-let hill1 = document.getElementById('hill1')
-let hill4 = document.getElementById('hill4')
-let hill5 = document.getElementById('hill5')
+const display = document.querySelector(".display");
+const displayprev = document.querySelector(".displayprev");
+const buttons = document.querySelectorAll("button");
+const specialChars = ["%", "*", "/", "-", "+", "="];
+let output = "";
 
-window.addEventListener('scroll', () => {
-    let value = window.scrollY;
 
-    text.style.marginTop = value * 2.5 + 'px';
-    leaf.style.top = value * -1.5 + 'px';
-    leaf.style.left = value * 1.5 + 'px';
-    hill5.style.left = value * 1.5 + 'px';
-    hill4.style.left = value * -1.5 + 'px';
-    hill1.style.top = value * 1 + 'px';
-})
+const calculate = (btnValue) => {
+    display.focus();
+    if (btnValue === "=" && output !== "") {
+        displayprev.value = output;
+        output = eval(output.replace("%", "/100"));
+    }
+    else if (btnValue === "AC") {
+        output = "";
+        displayprev.value = output;
+    }
+    else if (btnValue === "DEL") {
+        output = output.toString().slice(0, -1);
+    }
+    else {
+        if (output === "" && specialChars.includes(btnValue)) return;
+        output += btnValue;
+    }
+    display.value = output;
+};
+
+//for each event listener for every click on buttons
+buttons.forEach((button) => {
+    button.addEventListener("click", (e) => calculate(e.target.dataset.value));
+});
+
