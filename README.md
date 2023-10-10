@@ -1,4 +1,4 @@
-# Tugas1_PWEB_ParralaxTour
+# Tugas2_PWEB_ParralaxTour
 This repository is for my PWEB Class, this week i'll learn how to use basic html, css, and some JS to implement a parralax effect for my website
 
 in this branch i learned how to make css animation, in this login page i mostly use TranslateX to make this animation, because basically this 
