@@ -1,4 +1,4 @@
-# Tugas1_PWEB_ParralaxTour
+# Tugas4_PWEB_ParralaxTour
 this branch is for task 4 of my PWEB Class, in this task i need to make a working calculator using javascript
 the logic behind this calculator, is everytime a button is pressed, we add the value as string, then after the '=' was pressed, we use the javascript function eval() to evaluate the operation, but we need to replace % by /100.
 
